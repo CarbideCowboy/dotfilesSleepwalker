@@ -47,10 +47,16 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id compton -b
 
 #set background
-exec_always --no-startup-id feh --bg-fill ~/Pictures/antiy2.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/antiy4.jpg
+
+#set i3lock background
+exec_always --no-startup-id ~/.config/betterlockscreen/lock.sh -u ~/Pictures/antiy2.jpg
 
 #execute i3lock
 bindsym $mod+p exec ~/.config/betterlockscreen/lock.sh -l
+
+#disable touchpad through xinit
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
 
 # start rofi
 bindsym $mod+d exec rofi -show run
@@ -183,4 +189,4 @@ client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		#00FF00
 #gaps
 gaps inner 12
 smart_gaps on
-[hoker@sleepwalke
+
