@@ -1,0 +1,21 @@
+URxvt.font: xft:IBM Plex Mono:size=10
+URxvt.internalBorder: 25
+URxvt.scrollBar: false
+URxvt.background: #161115
+URxvt.foreground: #ececec
+URxvt.color0: #282a2e
+URxvt.color1: #a54242
+URxvt.color2: #8c9440
+URxvt.color3: #cb0d22
+URxvt.color4: #5f819d
+URxvt.color5: #85678f
+URxvt.color6: #5e8d87
+URxvt.color7: #707880
+URxvt.color8: #373b41
+URxvt.color9: #cc6666
+URxvt.color10: #2447aa
+URxvt.color11: #f0c674
+URxvt.color12: #81a2be
+URxvt.color13: #b294bb
+URxvt.color14: #8abeb7
+URxvt.color15: #c5c8c6
