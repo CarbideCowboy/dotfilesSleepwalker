@@ -88,7 +88,7 @@ ws-icon-9 = 10;10
 
 label-focused = %icon%
 ;label-focused-background = ${colors.yellow}
-label-focused-background = #FBE923
+label-focused-background = #e30580
 label-focused-foreground = ${colors.black}
 label-focused-padding = 2
 
@@ -108,16 +108,16 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
 label-disconnected =  WLan d/c
-ramp-signal-0 = 
+ramp-signal-0 = ï«
 
 [module/date]
 type = internal/date
-date =  %A, %b. %d  %H:%M
+date = ï³ %A, %b. %d ï %H:%M
 time = %H:%M
 interval = 5
 format-font =3 
 ;format-background = ${colors.yellow}
-format-background = #FBE923
+format-background = #e30580
 format-foreground = ${colors.black}
 format-padding = 1
 format-margin = 1
@@ -134,19 +134,19 @@ format-discharging = <ramp-capacity> <label-discharging>
 format-charging-padding = 1
 format-discharging-padding = 1
 format-full-padding = 1
-format-full-prefix = " "
+format-full-prefix = "ï§ "
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-0 = ï
+ramp-capacity-1 = ï
+ramp-capacity-2 = ï
+ramp-capacity-3 = ï
+ramp-capacity-4 = ï
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
+animation-charging-0 = ï
+animation-charging-1 = ï
+animation-charging-2 = ï
+animation-charging-3 = ï
+animation-charging-4 = ï
 animation-charging-framerate = 750
 
 [module/xwindow]
@@ -160,10 +160,10 @@ type = internal/volume
 
 format-volume = <label-volume> <bar-volume>
 format-volume-padding = 2
-label-volume = ""
+label-volume = "ï¨"
 ;label-volume-foreground = ${colors.cyan}
 
-format-muted-prefix = " "
+format-muted-prefix = "ï¦ "
 format-muted-prefix-margin = 2
 ;format-muted-foreground = ${colors.cyan}
 label-muted = " mute    "
@@ -175,8 +175,8 @@ bar-volume-width = 10
 bar-volume-gradient = true
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
-bar-volume-fill = ─
+bar-volume-fill = â
 bar-volume-fill-font = 2
-bar-volume-empty = ─
+bar-volume-empty = â
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.black}
