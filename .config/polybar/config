@@ -180,3 +180,4 @@ bar-volume-fill-font = 2
 bar-volume-empty = â
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.black}
+
