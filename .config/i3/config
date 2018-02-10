@@ -24,13 +24,19 @@ font pango:DejaVu Sans Mono 8
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
+# font, it doesnât scale on retina/hidpi displays.
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec urxvt
+
+# start connman-ui
+exec_always --no-startup-id connman-ui-gtk
+
+#disable top bar
+new_window pixel 4
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -47,10 +53,10 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id compton -b
 
 #set background
-exec_always --no-startup-id feh --bg-fill ~/Pictures/antiy4.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/antip.jpg
 
 #set i3lock background
-exec_always --no-startup-id ~/.config/betterlockscreen/lock.sh -u ~/Pictures/antiy2.jpg
+exec_always --no-startup-id ~/.config/betterlockscreen/lock.sh -u ~/Pictures/solar.jpg
 
 #execute i3lock
 bindsym $mod+p exec ~/.config/betterlockscreen/lock.sh -l
@@ -151,10 +157,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
+        # Pressing left will shrink the windowâs width.
+        # Pressing right will grow the windowâs width.
+        # Pressing up will shrink the windowâs height.
+        # Pressing down will grow the windowâs height.
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
@@ -174,8 +180,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #colors
-set $bg-color			#F9E60E
-set $inactive-bg-color		#221B19
+set $bg-color			#e30580
+set $inactive-bg-color		#051519
 set $text-color			#16122B
 set $inactive-text-color	#F9E60E
 set $urgent-bg-color		#E53935
@@ -187,6 +193,7 @@ client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-col
 client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		#00FF00
 
 #gaps
-gaps inner 12
+gaps inner 18
 smart_gaps on
+
 
